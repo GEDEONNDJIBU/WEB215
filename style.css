@@ -1,0 +1,103 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Deep black background */
+  color: #e8f5e9; /* Soft light green-tinted white for easy reading */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Matching Header and Footer */
+header,
+footer {
+  background-color: #2b1d14; /* Rich dark brown */
+  color: #a3d977; /* Light green text */
+  text-align: center;
+  padding: 25px 20px;
+  border-top: 3px solid #a3d977;
+  border-bottom: 3px solid #a3d977;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Main Content Area */
+main {
+  flex: 1; /* Pushes the footer to the bottom of the screen */
+  max-width: 850px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1c1917; /* Charcoal black/brown card */
+  border: 1px solid #3e2723; /* Dark brown border */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Main Navigation Menu (HOME, INTRODUCTION, CONTRACT) */
+main nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #2b1d14;
+}
+
+main nav a {
+  text-decoration: none;
+  color: #121212; /* Black text */
+  background-color: #a3d977; /* Light green button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main nav a:hover {
+  background-color: #3e2723; /* Dark brown on hover */
+  color: #a3d977; /* Light green text on hover */
+}
+
+/* Headings and Paragraphs */
+h2 {
+  color: #a3d977; /* Light green */
+  border-left: 4px solid #4e342e; /* Dark brown accent bar */
+  padding-left: 12px;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+/* Footer Navigation Links (GitHub, freeCodeCamp, etc.) */
+footer nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer nav a {
+  color: #a3d977; /* Light green */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer nav a:hover {
+  background-color: #121212; /* Black highlight on hover */
+  color: #c5e1a5; /* Brighter light green */
+}
+
